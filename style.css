@@ -1,4 +1,23 @@
 
+/* Variáveis CSS */
+
+:root {
+    --cor-principal: #123d2a;
+    --cor-secundaria: #205c3b;
+    --cor-destaque: #6cae45;
+    --cor-fundo: #f1f5f1;
+    --cor-texto: #222222;
+    --cor-branca: #ffffff;
+
+    --fonte-principal: "Poppins", sans-serif;
+
+    --espacamento-pequeno: 0.625rem;
+    --espacamento-medio: 1.25rem;
+    --espacamento-grande: 2.5rem;
+
+    --borda-arredondada: 0.625rem;
+}
+
 /* Configurações gerais */
 
 * {
@@ -7,59 +26,73 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f1f5f1;
-    color: #222;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Cabeçalho */
 
 header {
-    background-color: #123d2a;
-    color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
     text-align: center;
-    padding: 30px;
+    padding: var(--espacamento-grande);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: var(--espacamento-pequeno);
+    font-size: 1.125rem;
 }
 
 /* Menu */
 
 nav {
-    background-color: #205c3b;
+    background-color: var(--cor-secundaria);
     display: flex;
     justify-content: center;
-    gap: 30px;
-    padding: 15px;
+    gap: var(--espacamento-grande);
+    padding: var(--espacamento-medio);
 }
 
 nav a {
-    color: white;
+    color: var(--cor-branca);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--cor-destaque);
 }
 
 /* Conteúdo */
 
 main {
     width: 90%;
+    max-width: 75rem;
     margin: auto;
 }
 
 section {
-    padding: 40px 0;
+    padding: var(--espacamento-grande) 0;
 }
 
 section h2 {
-    color: #123d2a;
-    margin-bottom: 20px;
+    color: var(--cor-principal);
+    font-size: 1.875rem;
+    margin-bottom: var(--espacamento-medio);
 }
 
 /* Produtos */
@@ -67,62 +100,89 @@ section h2 {
 .container-produtos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: var(--espacamento-medio);
 }
 
 .produto {
-    background-color: white;
+    background-color: var(--cor-branca);
     width: 30%;
-    padding: 20px;
+    padding: var(--espacamento-medio);
     text-align: center;
-    border-radius: 10px;
+    border-radius: var(--borda-arredondada);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 .produto img {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: var(--borda-arredondada);
 }
 
 .produto h3 {
-    margin: 15px 0;
+    margin: var(--espacamento-medio) 0;
+    font-size: 1.25rem;
 }
 
 .produto p {
-    margin: 10px 0;
+    margin: var(--espacamento-pequeno) 0;
+    font-size: 0.9375rem;
 }
 
 .produto a {
     display: inline-block;
-    background-color: #205c3b;
-    color: white;
-    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+    padding: var(--espacamento-pequeno) var(--espacamento-medio);
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+    margin-top: var(--espacamento-pequeno);
+    transition: background-color 0.3s ease;
+}
+
+.produto a:hover {
+    background-color: var(--cor-destaque);
 }
 
 /* Dicas */
 
 article {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    background-color: var(--cor-branca);
+    padding: var(--espacamento-medio);
+    margin-bottom: var(--espacamento-medio);
+    border-radius: var(--borda-arredondada);
+    transition: transform 0.3s ease;
+}
+
+article:hover {
+    transform: translateX(0.3125rem);
 }
 
 /* Contato */
 
 #contato a {
-    color: #205c3b;
-    font-weight: bold;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#contato a:hover {
+    color: var(--cor-destaque);
 }
 
 /* Rodapé */
 
 footer {
-    background-color: #123d2a;
-    color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
     text-align: center;
-    padding: 20px;
+    padding: var(--espacamento-medio);
+    font-size: 0.875rem;
 }
+
