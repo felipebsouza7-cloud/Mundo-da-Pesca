@@ -1,96 +1,346 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo da Pesca</title>
+
+    <title>Mundo da Pesca | Loja de Artigos de Pesca</title>
+
     <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <header>
-        <h1>Mundo da Pesca</h1>
-        <p>Equipamentos para sua próxima aventura</p>
+    <!-- Cabeçalho -->
+    <header class="topo">
+
+        <div class="logo">
+            <h1>Mundo da <span>Pesca</span></h1>
+        </div>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
     </header>
 
-    <nav>
-        <a href="#inicio">Início</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#dicas">Dicas</a>
-    </nav>
-
+    <!-- Conteúdo principal -->
     <main>
-        <section id="inicio">
-            <h2>Bem-vindo ao Mundo da Pesca!</h2>
-            <p>
-                Encontre os melhores equipamentos para suas aventuras.
-                Temos varas, molinetes, iscas e acessórios para pescadores.
-            </p>
 
-            <a href="#produtos">Conheça nossos produtos</a>
+        <!-- Banner principal -->
+        <section id="inicio" class="banner">
+
+            <div class="banner-conteudo">
+
+                <p class="subtitulo">SEU DESTINO PARA GRANDES PESCARIAS</p>
+
+                <h2>
+                    A aventura começa
+                    <span>na beira do rio</span>
+                </h2>
+
+                <p class="descricao-banner">
+                    Encontre os melhores equipamentos de pesca para
+                    transformar cada pescaria em uma experiência inesquecível.
+                </p>
+
+                <a href="#produtos" class="botao">
+                    Explorar produtos
+                </a>
+
+            </div>
+
+            <div class="banner-imagem">
+
+                <img
+                    src="https://plus.unsplash.com/premium_photo-1661762422433-b18f87b64341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                    alt="Equipamentos utilizados em uma pescaria">
+
+            </div>
+
         </section>
 
-        <section id="produtos">
-            <h2>Nossos Produtos</h2>
+        <!-- Categorias -->
+        <section id="categorias" class="categorias">
 
-            <div class="container-produtos">
+            <div class="titulo-secao">
 
-                <article class="produto">
-                    <img src="https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?auto=format&fit=crop&w=600&q=80" alt="Equipamento de pesca">
-                    <h3>Vara de Pesca</h3>
-                    <p>Vara resistente para suas pescarias.</p>
-                    <p>Preço: R$ 150,00</p>
-                    <a href="#contato">Comprar</a>
+                <p class="subtitulo">EXPLORE NOSSA LOJA</p>
+
+                <h2>Categorias de produtos</h2>
+
+                <p>
+                    Tudo o que você precisa para sua próxima aventura.
+                </p>
+
+            </div>
+
+            <div class="container-categorias">
+
+                <article class="categoria">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1529230117010-b6c436154f25?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                        alt="Varas de pesca">
+
+                    <h3>Varas de Pesca</h3>
+
+                    <a href="#produtos">Ver produtos</a>
+
                 </article>
 
-                <article class="produto">
-                    <img src="https://images.unsplash.com/photo-1510133680055-ebe2e7c5e8a2?auto=format&fit=crop&w=600&q=80" alt="Acessório de pesca">
-                    <h3>Molinete</h3>
-                    <p>Molinete de qualidade e alta durabilidade.</p>
-                    <p>Preço: R$ 200,00</p>
-                    <a href="#contato">Comprar</a>
+                <article class="categoria">
+
+                    <img
+                        src="molinete.jpg"
+                        alt="Molinete de pesca">
+
+                    <h3>Molinetes</h3>
+
+                    <a href="#produtos">Ver produtos</a>
+
                 </article>
 
-                <article class="produto">
-                    <img src="https://images.unsplash.com/photo-1498654200943-1088dd4438ae?auto=format&fit=crop&w=600&q=80" alt="Iscas para pesca">
+                <article class="categoria">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1592928230658-87ab4b4141a6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                        alt="Iscas artificiais">
+
                     <h3>Iscas Artificiais</h3>
-                    <p>Iscas para atrair diferentes espécies de peixes.</p>
-                    <p>Preço: R$ 50,00</p>
-                    <a href="#contato">Comprar</a>
+
+                    <a href="#produtos">Ver produtos</a>
+
                 </article>
 
             </div>
+
         </section>
 
-        <section id="dicas">
-            <h2>Dicas de Pesca</h2>
+        <!-- Produtos -->
+        <section id="produtos" class="produtos">
 
-            <article>
-                <h3>Escolha o equipamento certo</h3>
-                <p>Utilize equipamentos adequados ao tipo de peixe.</p>
-            </article>
+            <div class="titulo-secao">
 
-            <article>
-                <h3>Respeite a natureza</h3>
-                <p>Preserve os rios e lagos durante sua pescaria.</p>
-            </article>
+                <p class="subtitulo">QUALIDADE E DESEMPENHO</p>
+
+                <h2>Produtos em destaque</h2>
+
+                <p>
+                    Confira alguns dos equipamentos favoritos dos pescadores.
+                </p>
+
+            </div>
+
+            <div class="container-produtos">
+
+                <!-- Produto 1 -->
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1761303506065-872086753a0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                            alt="Vara de pesca profissional">
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">VARAS DE PESCA</p>
+
+                        <h3>Vara de Pesca Profissional</h3>
+
+                        <p class="descricao-produto">
+                            Vara resistente e leve para pescarias de alto desempenho.
+                        </p>
+
+                        <p class="preco">R$ 150,00</p>
+
+                        <a href="#contato" class="botao-comprar">
+                            Comprar agora
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Produto 2 -->
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="molinete.jpg"
+                            alt="Molinete de pesca de alta qualidade">
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">MOLINETES</p>
+
+                        <h3>Molinete de Alta Qualidade</h3>
+
+                        <p class="descricao-produto">
+                            Equipamento durável, ideal para diferentes tipos de pesca.
+                        </p>
+
+                        <p class="preco">R$ 200,00</p>
+
+                        <a href="#contato" class="botao-comprar">
+                            Comprar agora
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Produto 3 -->
+                <article class="produto">
+
+                    <div class="produto-imagem">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1592928230658-87ab4b4141a6?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                            alt="Kit de iscas artificiais para pesca">
+
+                    </div>
+
+                    <div class="produto-info">
+
+                        <p class="categoria-produto">ISCAS</p>
+
+                        <h3>Kit de Iscas Artificiais</h3>
+
+                        <p class="descricao-produto">
+                            Iscas variadas para aumentar suas chances de captura.
+                        </p>
+
+                        <p class="preco">R$ 50,00</p>
+
+                        <a href="#contato" class="botao-comprar">
+                            Comprar agora
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
         </section>
 
-        <section id="contato">
-            <h2>Entre em contato</h2>
-            <p>Quer saber mais sobre nossos produtos?</p>
-            <a href="mailto:contato@mundodapesca.com">Enviar e-mail</a>
+        <!-- Dicas de pesca -->
+        <section id="dicas" class="dicas">
+
+            <div class="titulo-secao">
+
+                <p class="subtitulo">PARA SUA PRÓXIMA AVENTURA</p>
+
+                <h2>Dicas para pescadores</h2>
+
+            </div>
+
+            <div class="container-dicas">
+
+                <article class="dica">
+
+                    <h3>Escolha o equipamento certo</h3>
+
+                    <p>
+                        Utilize varas, linhas e iscas adequadas
+                        para o tipo de peixe que deseja capturar.
+                    </p>
+
+                </article>
+
+                <article class="dica">
+
+                    <h3>Conheça o local da pescaria</h3>
+
+                    <p>
+                        Pesquise sobre o rio ou lago e os melhores
+                        horários para realizar sua pescaria.
+                    </p>
+
+                </article>
+
+                <article class="dica">
+
+                    <h3>Preserve a natureza</h3>
+
+                    <p>
+                        Recolha seu lixo e respeite as regras de pesca
+                        para proteger os rios e os peixes.
+                    </p>
+
+                </article>
+
+            </div>
+
         </section>
+
+        <!-- Contato -->
+        <section id="contato" class="contato">
+
+            <div class="contato-conteudo">
+
+                <p class="subtitulo">FALE CONOSCO</p>
+
+                <h2>Prepare-se para sua próxima pescaria!</h2>
+
+                <p>
+                    Entre em contato com o Mundo da Pesca
+                    e encontre os equipamentos ideais para você.
+                </p>
+
+                <a href="mailto:contato@mundodapesca.com" class="botao">
+                    Entrar em contato
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mundo da Pesca - Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <div class="rodape-conteudo">
+
+            <h2>Mundo da <span>Pesca</span></h2>
+
+            <p>
+                Sua aventura começa aqui.
+                Os melhores equipamentos para os apaixonados pela pesca.
+            </p>
+
+        </div>
+
+        <div class="rodape-final">
+
+            <p>
+                &copy; 2026 Mundo da Pesca.
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
     </footer>
 
 </body>
 </html>
-
